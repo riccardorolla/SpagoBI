@@ -359,7 +359,7 @@ public class LDAPConnector {
 			}
 		}
     	
-    	return groupDistingushedName.endsWith(searchPath);
+    	return groupDistingushedName.toLowerCase().endsWith(searchPath.toLowerCase());
     }
     
     private String getGroupName(String groupDistingushedName) {
